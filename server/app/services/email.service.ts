@@ -10,7 +10,7 @@ export class EmailService {
       fileContent = extension !== 'svg' ? Buffer.from(dataUrl, 'base64') : dataUrl;
       const options = {
         method: 'POST',
-        url: 'https://log2990.step.polymtl.ca/email?address_validation=true&quick_return=true',
+        url: '',
         headers: {
           'x-team-key': process.env.API_KEY, 'content-type': 'multipart/form-data'
         },
