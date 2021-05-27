@@ -32,9 +32,7 @@ export class LineTool extends CreatorTool {
     this.toolProperties = new LineToolProperties();
   }
 
-  // tslint:disable-next-line:no-magic-numbers
   static readonly MAX_HORIZONTAL_LOCK_ANGLE: number = Math.PI / 6;
-  // tslint:disable-next-line:no-magic-numbers
   static readonly MAX_DIAGONAL_LOCK_ANGLE: number = Math.PI / 3;
   static readonly MAX_VERTICAL_LOCK_ANGLE: number = Math.PI / 2;
   toolProperties: LineToolProperties;

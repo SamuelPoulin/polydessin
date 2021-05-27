@@ -1,4 +1,3 @@
-/* tslint:disable:no-string-literal */
 import { ShapesCommand } from 'src/app/models/commands/shape-commands/shapes-command';
 import { Ellipse } from 'src/app/models/shapes/ellipse';
 import { Rectangle } from 'src/app/models/shapes/rectangle';

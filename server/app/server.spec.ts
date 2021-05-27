@@ -1,4 +1,3 @@
-/* tslint:disable:no-any no-magic-numbers */
 import { expect } from 'chai';
 import * as sinon from 'sinon';
 

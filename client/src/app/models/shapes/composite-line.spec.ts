@@ -1,4 +1,3 @@
-/* tslint:disable:no-magic-numbers no-string-literal */
 import { BaseShape } from '@models/shapes/base-shape';
 import { EditorUtils } from '@utils/color/editor-utils';
 import { CompositeLine } from 'src/app/models/shapes/composite-line';

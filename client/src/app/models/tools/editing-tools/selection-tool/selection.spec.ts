@@ -1,5 +1,3 @@
-/* tslint:disable:no-string-literal */
-/* tslint:disable:no-magic-numbers */
 import { BaseShape } from '@models/shapes/base-shape';
 import { Rectangle } from '@models/shapes/rectangle';
 import { Selection } from '@models/tools/editing-tools/selection-tool/selection';

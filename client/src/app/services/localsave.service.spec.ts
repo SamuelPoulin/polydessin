@@ -1,4 +1,3 @@
-// tslint:disable: no-magic-numbers
 import { async, TestBed } from '@angular/core/testing';
 import { Drawing } from '@models/drawing';
 import { LocalSaveService } from './localsave.service';

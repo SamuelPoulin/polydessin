@@ -1,4 +1,3 @@
-/* tslint:disable:no-magic-numbers */
 import { Color } from '@utils/color/color';
 import { Coordinate } from '@utils/math/coordinate';
 import { ColorFillUtils, ColorGetter, ColorSetter } from './color-fill-utils';

@@ -1,4 +1,3 @@
-/*tslint:disable:no-string-literal no-magic-numbers*/
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { DomSanitizer } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
@@ -55,21 +54,18 @@ describe('ImageExportService', () => {
     const createDataSpy = spyOn(EditorUtils, 'createDataURL');
     service.safeURL(fixture.componentInstance.drawingSurface);
     expect(createDataSpy).toHaveBeenCalledWith(fixture.componentInstance.drawingSurface);
-    // tslint:disable-next-line: max-line-length
     expect(domSanitizer.bypassSecurityTrustResourceUrl).toHaveBeenCalledWith(
       EditorUtils.createDataURL(fixture.componentInstance.drawingSurface),
     );
   });
   it('should return safe URL when safe url called', () => {
     const returnValue = service.safeURL(fixture.componentInstance.drawingSurface);
-    // tslint:disable-next-line: max-line-length
     expect(returnValue).toEqual(
       domSanitizer.bypassSecurityTrustResourceUrl(EditorUtils.createDataURL(fixture.componentInstance.drawingSurface)),
     );
   });
   it('should return encoded dataURL', () => {
     const returnValue = EditorUtils.createDataURL(fixture.componentInstance.drawingSurface);
-    // tslint:disable-next-line: max-line-length
     expect(returnValue).toEqual(
       'data:image/svg+xml,' + encodeURIComponent(xmlSerializer.serializeToString(fixture.componentInstance.drawingSurface.svg)),
     );
@@ -133,7 +129,6 @@ describe('ImageExportService', () => {
   });
   it('should return non encoded dataURL', () => {
     const returnValue = EditorUtils.createSerializedString(fixture.componentInstance.drawingSurface);
-    // tslint:disable-next-line: max-line-length
     expect(returnValue).toEqual(xmlSerializer.serializeToString(fixture.componentInstance.drawingSurface.svg));
   });
 });

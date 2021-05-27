@@ -53,7 +53,6 @@ describe('UserGuideComponent', () => {
 
   it('nextSubject should call selectSubject and openCategories', () => {
     const selectSubjectSpy = spyOn(component, 'selectSubject');
-    // tslint:disable-next-line:no-any
     const openCategoriesSpy = spyOn<any>(component, 'openCategories');
     component.nextSubject();
     expect(selectSubjectSpy).toHaveBeenCalled();
@@ -62,7 +61,6 @@ describe('UserGuideComponent', () => {
 
   it('previousSubject should call selectSubject and openCategories because the subject is not Bienvenue', () => {
     const selectSubjectSpy = spyOn(component, 'selectSubject').and.callThrough();
-    // tslint:disable-next-line:no-any
     const openCategoriesSpy = spyOn<any>(component, 'openCategories').and.callThrough();
 
     component.selectedSubject = component.subjects.Brush;
@@ -89,7 +87,6 @@ describe('UserGuideComponent', () => {
   });
 
   it('All categories should be opened', () => {
-    /* tslint:disable-next-line */
     component['openCategories']();
     expect(component.panelOpenState1).toEqual(true);
   });

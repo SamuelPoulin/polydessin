@@ -1,4 +1,3 @@
-/* tslint:disable:no-magic-numbers */
 import { NumericProperty } from 'src/app/models/tool-properties/props/numeric-property/numeric-property';
 
 describe('NumericProperty', () => {

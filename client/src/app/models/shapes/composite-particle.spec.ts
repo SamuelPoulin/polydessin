@@ -1,4 +1,3 @@
-/* tslint:disable:no-string-literal no-magic-numbers */
 import { Rectangle } from '@models/shapes/rectangle';
 import { EditorUtils } from '@utils/color/editor-utils';
 import { Coordinate } from '../../utils/math/coordinate';

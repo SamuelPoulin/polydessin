@@ -1,4 +1,3 @@
-/* tslint:disable:no-string-literal no-magic-numbers */
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { DrawingSurfaceComponent } from '@components/pages/editor/drawing-surface/drawing-surface.component';
 import { SharedModule } from '@components/shared/shared.module';

@@ -1,4 +1,3 @@
-/* tslint:disable:no-magic-numbers */
 import { ElementRef } from '@angular/core';
 import { AbstractColorStripComponent } from 'src/app/components/shared/color-picker/color-strip/abstract-color-strip.component';
 import { Color } from 'src/app/utils/color/color';

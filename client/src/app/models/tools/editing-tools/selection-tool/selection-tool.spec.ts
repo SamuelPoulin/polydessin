@@ -10,11 +10,6 @@ import { BaseShape } from 'src/app/models/shapes/base-shape';
 import { Rectangle } from 'src/app/models/shapes/rectangle';
 import { SelectionTool } from 'src/app/models/tools/editing-tools/selection-tool/selection-tool';
 
-/* tslint:disable:no-string-literal */
-/* tslint:disable:no-magic-numbers */
-/* tslint:disable:no-any */
-/* tslint:disable:max-file-line-count */
-
 const mouseDown = (c: Coordinate = new Coordinate(), rightClick: boolean = false): MouseEvent => {
   return {
     button: rightClick ? MouseListenerService.BUTTON_RIGHT : MouseListenerService.BUTTON_LEFT,

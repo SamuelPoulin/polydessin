@@ -1,4 +1,3 @@
-/* tslint:disable:no-string-literal */
 import { EventAction } from 'src/app/services/event-listeners/abstract-event-listener.service';
 import { KeyboardListenerService } from 'src/app/services/event-listeners/keyboard-listener/keyboard-listener.service';
 import createSpy = jasmine.createSpy;

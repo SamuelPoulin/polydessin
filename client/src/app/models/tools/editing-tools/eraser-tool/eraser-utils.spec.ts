@@ -1,4 +1,3 @@
-/* tslint:disable:no-magic-numbers no-string-literal */
 import { BaseShape } from '@models/shapes/base-shape';
 import { Color } from '@utils/color/color';
 import { EraserUtils } from './eraser-utils';

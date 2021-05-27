@@ -1,4 +1,3 @@
-// tslint:disable: no-magic-numbers
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatDialogRef } from '@angular/material';
 import { Router } from '@angular/router';

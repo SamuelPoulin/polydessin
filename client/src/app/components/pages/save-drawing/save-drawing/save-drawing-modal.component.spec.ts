@@ -1,4 +1,3 @@
-/* tslint:disable:no-string-literal */
 import { SecurityContext } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
@@ -50,7 +49,6 @@ describe('SaveDrawingModalComponent', () => {
   });
   it('should call image export service safeURL for preview', () => {
     const spy = spyOn(component['imageExportService'], 'safeURL');
-    // tslint:disable-next-line: no-unused-expression
     component.previewURL;
     expect(spy).toHaveBeenCalledWith(component['editorService'].view);
   });

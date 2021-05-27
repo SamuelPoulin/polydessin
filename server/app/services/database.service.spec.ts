@@ -1,5 +1,3 @@
-/* tslint:disable:no-any no-magic-numbers */
-/* tslint:disable:no-any no-string-literal */
 import { expect } from 'chai';
 import * as httpStatus from 'http-status-codes';
 

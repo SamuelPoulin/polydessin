@@ -1,4 +1,3 @@
-/* tslint:disable:no-string-literal */
 import { TestBed } from '@angular/core/testing';
 import { SelectedColorType } from 'src/app/services/selected-color-type.enum';
 import { Color } from 'src/app/utils/color/color';

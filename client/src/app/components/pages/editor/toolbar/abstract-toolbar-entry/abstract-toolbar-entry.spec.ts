@@ -1,4 +1,3 @@
-/* tslint:disable:no-string-literal */
 import { ShapeError } from '@models/shapes/shape-error/shape-error';
 import { LocalSaveService } from '@services/localsave.service';
 import { Property } from '@tool-properties/props/property';

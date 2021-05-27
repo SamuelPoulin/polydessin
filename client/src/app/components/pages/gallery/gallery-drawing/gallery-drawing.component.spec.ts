@@ -1,4 +1,3 @@
-// tslint:disable: no-string-literal
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { SharedModule } from '@components/shared/shared.module';
 import { Drawing } from '@models/drawing';

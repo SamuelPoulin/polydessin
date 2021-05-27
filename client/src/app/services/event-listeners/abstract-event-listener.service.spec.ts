@@ -1,4 +1,3 @@
-/* tslint:disable:no-string-literal */
 import { AbstractEventListenerService, EventAction } from 'src/app/services/event-listeners/abstract-event-listener.service';
 import Spy = jasmine.Spy;
 import createSpy = jasmine.createSpy;

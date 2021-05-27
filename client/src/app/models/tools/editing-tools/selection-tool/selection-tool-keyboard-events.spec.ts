@@ -1,4 +1,3 @@
-/* tslint:disable:no-string-literal no-magic-numbers */
 import { TestBed } from '@angular/core/testing';
 import { keyDown, keyUp } from '@components/pages/editor/editor/editor.component.spec';
 import { SharedModule } from '@components/shared/shared.module';

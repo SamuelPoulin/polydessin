@@ -1,4 +1,3 @@
-/* tslint:disable: no-magic-numbers no-string-literal no-any*/
 import { EditorUtils } from '@utils/color/editor-utils';
 import { Coordinate } from 'src/app/utils/math/coordinate';
 import { Polygon } from './polygon';

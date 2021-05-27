@@ -1,5 +1,3 @@
-/* tslint:disable:no-magic-numbers */
-
 import { MathUtils } from '@utils/math/math-utils';
 
 describe('MathUtils', () => {

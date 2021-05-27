@@ -8,7 +8,6 @@ import { defaultErrorMessages, ErrorMessages } from 'src/app/components/shared/i
   styleUrls: ['./custom-input.component.scss'],
 })
 export class CustomInputComponent implements OnInit, OnChanges {
-  // tslint:disable-next-line:typedef
   static id = 0;
   @Input() id: string;
   @Input() autofocus: boolean;

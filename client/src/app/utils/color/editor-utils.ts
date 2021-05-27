@@ -62,7 +62,6 @@ export class EditorUtils {
       const dataSize = 4;
       const rIndex = y * (width * dataSize) + x * dataSize;
 
-      // tslint:disable-next-line:no-magic-numbers
       return [rIndex, rIndex + 1, rIndex + 2, rIndex + 3];
     };
 

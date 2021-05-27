@@ -34,11 +34,9 @@ describe('ColorHistoryComponent', () => {
       ColorsService.pushHistory(i % 2 === 0 ? Color.RED : Color.GREEN);
     }
     expect(component.colorHistory[0]).toEqual(Color.RED);
-    // tslint:disable-next-line:no-magic-numbers
     expect(component.colorHistory[9]).toEqual(Color.GREEN);
     ColorsService.pushHistory(Color.BLUE);
     expect(component.colorHistory[0]).toEqual(Color.GREEN);
-    // tslint:disable-next-line:no-magic-numbers
     expect(component.colorHistory[9]).toEqual(Color.BLUE);
   });
 

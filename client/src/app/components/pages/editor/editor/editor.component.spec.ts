@@ -1,4 +1,3 @@
-/*tslint:disable:no-string-literal no-magic-numbers max-file-line-count*/
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatDialogRef } from '@angular/material';
 import { By } from '@angular/platform-browser';

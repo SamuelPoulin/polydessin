@@ -1,4 +1,3 @@
-// tslint:disable: no-string-literal max-line-length
 import { Overlay } from '@angular/cdk/overlay';
 import { HttpXhrBackend } from '@angular/common/http';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';

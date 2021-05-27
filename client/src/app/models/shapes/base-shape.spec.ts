@@ -1,4 +1,3 @@
-/* tslint:disable:no-magic-numbers */
 import { ContourType } from '@models/tool-properties/creator-tool-properties/contour-type.enum';
 import { BaseShape } from 'src/app/models/shapes/base-shape';
 import { Color } from 'src/app/utils/color/color';

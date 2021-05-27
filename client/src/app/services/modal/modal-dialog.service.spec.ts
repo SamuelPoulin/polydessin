@@ -1,4 +1,3 @@
-/* tslint:disable:no-any */
 import { Overlay } from '@angular/cdk/overlay';
 import { Injector } from '@angular/core';
 import { TestBed } from '@angular/core/testing';

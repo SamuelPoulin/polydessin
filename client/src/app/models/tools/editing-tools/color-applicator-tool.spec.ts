@@ -1,4 +1,3 @@
-/* tslint:disable:no-string-literal */
 import { TestBed } from '@angular/core/testing';
 import { SharedModule } from 'src/app/components/shared/shared.module';
 import { Rectangle } from 'src/app/models/shapes/rectangle';

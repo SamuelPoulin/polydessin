@@ -4,7 +4,6 @@ import { Color } from 'src/app/utils/color/color';
 import { Coordinate } from 'src/app/utils/math/coordinate';
 
 export abstract class BaseShape {
-  // tslint:disable-next-line:typedef
   private static SHAPE_ID = 0;
   static readonly CSS_NONE: string = 'none';
   static readonly SVG_NAMESPACE_URL: string = 'http://www.w3.org/2000/svg';
@@ -90,7 +89,6 @@ export abstract class BaseShape {
     this.updateProperties();
   }
 
-  // tslint:disable-next-line:no-any
   static jsonReplacer(key: string, value: any): any {
     // for use with JSON.Stringify
     return key === 'svgNode' ? undefined : value;

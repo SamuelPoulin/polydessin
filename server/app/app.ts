@@ -48,7 +48,6 @@ export class Application {
     // development error handler
     // will print stacktrace
     if (this.app.get('env') === 'development') {
-      // tslint:disable-next-line:no-any
       this.app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
         res.status(err.status || this.internalError);
         res.send({
@@ -60,7 +59,6 @@ export class Application {
 
     // production error handler
     // no stacktraces leaked to user (in production env only)
-    // tslint:disable-next-line:no-any
     this.app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
       res.status(err.status || this.internalError);
       res.send({

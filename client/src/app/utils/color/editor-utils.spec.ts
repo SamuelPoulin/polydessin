@@ -1,4 +1,3 @@
-/* tslint:disable:no-magic-numbers */
 import createSpyObj = jasmine.createSpyObj;
 import { DrawingSurfaceComponent } from '@components/pages/editor/drawing-surface/drawing-surface.component';
 import { BoundingBox } from '@models/shapes/bounding-box';

@@ -1,5 +1,3 @@
-/* tslint:disable:no-require-imports no-var-requires*/
-/* tslint:disable:no-string-literal*/
 import * as chai from 'chai';
 import 'chai-http';
 import * as sinon from 'sinon';

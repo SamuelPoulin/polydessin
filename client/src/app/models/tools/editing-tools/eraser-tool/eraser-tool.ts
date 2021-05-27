@@ -11,7 +11,6 @@ import { Color } from 'src/app/utils/color/color';
 import { Coordinate } from 'src/app/utils/math/coordinate';
 
 export class EraserTool extends Tool {
-  // tslint:disable-next-line:no-magic-numbers
   static readonly DARKER_HIGHLIGHT_COLOR: Color = Color.rgb(0.8, 0, 0);
   static readonly HIGHLIGHT_COLOR: Color = Color.RED;
   private readonly eraserView: Rectangle;

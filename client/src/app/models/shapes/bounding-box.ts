@@ -5,7 +5,6 @@ import { ControlPoint } from './control-point.enum';
 import { Rectangle } from './rectangle';
 
 export class BoundingBox extends BaseShape {
-  // tslint:disable-next-line:no-magic-numbers
   static readonly BOUNDING_BOX_COLOR: Color = Color.rgb255(80, 80, 255, 0.25);
 
   private outline: Rectangle;

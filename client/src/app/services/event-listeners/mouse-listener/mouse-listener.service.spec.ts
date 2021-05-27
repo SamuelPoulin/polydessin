@@ -1,4 +1,3 @@
-/* tslint:disable:no-string-literal */
 import { TestBed } from '@angular/core/testing';
 import { MouseHandler } from 'src/app/services/event-listeners/mouse-listener/mouse-handler';
 import { MouseListenerService } from 'src/app/services/event-listeners/mouse-listener/mouse-listener.service';

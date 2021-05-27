@@ -1,4 +1,3 @@
-/*tslint:disable:no-string-literal*/
 import { Command } from './command';
 import { CommandReceiver } from './command-receiver';
 

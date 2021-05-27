@@ -1,5 +1,3 @@
-/* tslint:disable:no-string-literal */
-/* tslint:disable:no-magic-numbers */
 import { Coordinate } from 'src/app/utils/math/coordinate';
 import { BoundingBox } from './bounding-box';
 import { ControlPoint } from './control-point.enum';
