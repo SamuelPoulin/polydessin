@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { PenToolbarComponent } from 'src/app/components/pages/editor/toolbar/pen-toolbar/pen-toolbar.component';
 import { SharedModule } from 'src/app/components/shared/shared.module';
@@ -9,7 +9,7 @@ describe('PenToolbarComponent', () => {
   let component: PenToolbarComponent;
   let fixture: ComponentFixture<PenToolbarComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [SharedModule],
       declarations: [PenToolbarComponent],

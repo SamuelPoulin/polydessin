@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { GridComponent } from '@components/pages/editor/drawing-surface/grid/grid.component';
 import { ToolbarModule } from '@components/pages/editor/toolbar/toolbar.module';
@@ -19,7 +19,7 @@ describe('RectangleTool', () => {
   let properties: ShapeToolProperties;
   let selectedColorsService: ColorsService;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [EditorComponent, DrawingSurfaceComponent, GridComponent],
       imports: [SharedModule, RouterTestingModule, ToolbarModule],

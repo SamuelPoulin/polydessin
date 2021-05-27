@@ -1,5 +1,5 @@
 import { DebugElement } from '@angular/core';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { ColorsService } from 'src/app/services/colors.service';
 import { Color } from 'src/app/utils/color/color';
@@ -11,7 +11,7 @@ describe('ColorHistoryComponent', () => {
   let fixture: ComponentFixture<ColorHistoryComponent>;
   let selectedColors: ColorsService;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ColorHistoryComponent],
       providers: [ColorsService],

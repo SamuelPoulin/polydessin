@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { ToolType } from 'src/app/models/tools/tool-type.enum';
 import { SharedModule } from '../../../../shared/shared.module';
 
@@ -9,7 +9,7 @@ describe('EllipseToolbarComponent', () => {
   let component: EllipseToolbarComponent;
   let fixture: ComponentFixture<EllipseToolbarComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [SharedModule],
       declarations: [EllipseToolbarComponent],

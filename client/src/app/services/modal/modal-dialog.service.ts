@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { ChooseExportSaveModalComponent } from '@components/pages/choose-export-save/choose-export-save/choose-export-save-modal.component';
 import { ExportModalComponent } from 'src/app/components/pages/export-modal/export-modal/export-modal.component';
 import { GalleryModalComponent } from 'src/app/components/pages/gallery/gallery/gallery-modal.component';

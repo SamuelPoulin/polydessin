@@ -1,11 +1,11 @@
-import { async, TestBed } from '@angular/core/testing';
+import { TestBed, waitForAsync } from '@angular/core/testing';
 import { Drawing } from '@models/drawing';
 import { LocalSaveService } from './localsave.service';
 
 describe('LocalSaveService', () => {
   let service: LocalSaveService;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({}).compileComponents();
   }));
 

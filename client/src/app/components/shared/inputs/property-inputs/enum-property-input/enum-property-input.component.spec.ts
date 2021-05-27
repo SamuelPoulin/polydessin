@@ -1,7 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { FormsModule } from '@angular/forms';
-import { MatRadioModule } from '@angular/material';
+import { MatRadioModule } from '@angular/material/radio';
 import { EnumProperty } from '@tool-properties/props/enum-property/enum-property';
 import { EnumPropertyInputComponent } from './enum-property-input.component';
 
@@ -15,7 +15,7 @@ describe('EnumPropertyInputComponent', () => {
 
   let enumProp: EnumProperty<Enum, Enum>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [MatRadioModule, FormsModule],
       declarations: [ EnumPropertyInputComponent ]

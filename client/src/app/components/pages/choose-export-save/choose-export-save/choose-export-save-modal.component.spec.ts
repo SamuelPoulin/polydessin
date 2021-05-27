@@ -1,5 +1,5 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatDialogRef } from '@angular/material';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { MatDialogRef } from '@angular/material/dialog';
 import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 import createSpy = jasmine.createSpy;
 import { ModalType } from '@services/modal/modal-type.enum';
@@ -11,7 +11,7 @@ describe('ChooseExportSaveModal', () => {
   let fixture: ComponentFixture<ChooseExportSaveModalComponent>;
   const dialogRefCloseSpy = createSpy('close');
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [SharedModule],
       declarations: [ChooseExportSaveModalComponent],

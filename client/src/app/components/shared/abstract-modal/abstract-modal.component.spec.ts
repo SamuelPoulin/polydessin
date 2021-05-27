@@ -1,5 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef, MatFormFieldModule } from '@angular/material';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { AbstractModalComponent } from './abstract-modal.component';
 
@@ -7,7 +8,7 @@ describe('AbstractModalComponent', () => {
   let component: AbstractModalComponent;
   let fixture: ComponentFixture<AbstractModalComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [MatDialogModule, MatFormFieldModule],
       declarations: [AbstractModalComponent],

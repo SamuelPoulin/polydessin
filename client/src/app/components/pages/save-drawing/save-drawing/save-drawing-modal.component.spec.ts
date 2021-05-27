@@ -1,7 +1,7 @@
 import { SecurityContext } from '@angular/core';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
-import { MatDialogRef } from '@angular/material';
+import { MatDialogRef } from '@angular/material/dialog';
 import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import createSpy = jasmine.createSpy;
@@ -17,7 +17,7 @@ describe('SaveDrawingModalComponent', () => {
   let fixtureEditor: ComponentFixture<EditorComponent>;
   const dialogRefCloseSpy = createSpy('close');
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [SharedModule, EditorModule, RouterTestingModule, FormsModule],
       declarations: [SaveDrawingModalComponent],

@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { GridComponent } from '@components/pages/editor/drawing-surface/grid/grid.component';
 import { ToolbarModule } from '@components/pages/editor/toolbar/toolbar.module';
@@ -12,7 +12,7 @@ import { MoveShapeCommand } from './move-shape-command';
 describe('RemoveShapesCommand', () => {
   let fixture: ComponentFixture<EditorComponent>;
   let editor: EditorComponent;
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, SharedModule, ToolbarModule],
       declarations: [DrawingSurfaceComponent, EditorComponent, GridComponent],

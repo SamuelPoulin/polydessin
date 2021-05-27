@@ -1,5 +1,5 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatDialogRef } from '@angular/material';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { MatDialogRef } from '@angular/material/dialog';
 import { AbstractModalComponent } from 'src/app/components/shared/abstract-modal/abstract-modal.component';
 
 import { ConfirmModalComponent } from './confirm-modal.component';
@@ -10,7 +10,7 @@ describe('ConfirmModalComponent', () => {
   let fixture: ComponentFixture<ConfirmModalComponent>;
   const dialogRefCloseSpy = createSpy('close');
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ConfirmModalComponent, AbstractModalComponent],
       providers: [{ provide: MatDialogRef, useValue: { close: dialogRefCloseSpy } }],

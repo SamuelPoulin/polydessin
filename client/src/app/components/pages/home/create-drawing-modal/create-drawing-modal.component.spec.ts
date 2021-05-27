@@ -1,5 +1,5 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatDialogRef } from '@angular/material';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { Color } from 'src/app/utils/color/color';
@@ -20,7 +20,7 @@ describe('CreateDrawingModalComponent', () => {
   let component: CreateDrawingModalComponent;
   let fixture: ComponentFixture<CreateDrawingModalComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [SharedModule, RouterTestingModule],
       declarations: [CreateDrawingModalComponent],
@@ -47,7 +47,7 @@ describe('CreateDrawingModalComponent', () => {
     expect(onCreateClickSpy).toHaveBeenCalled();
   });
 
-  it('should route correctly when calling onCreateClick', async(() => {
+  it('should route correctly when calling onCreateClick', waitForAsync(() => {
     routerSpy.navigate.and.returnValue(Promise.resolve());
     component.width = '2';
     component.height = '3';

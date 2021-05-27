@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { SharedModule } from '@components/shared/shared.module';
 import { EditorService } from '@services/editor.service';
 import { SelectionToolbarComponent } from './selection-toolbar.component';
@@ -8,7 +8,7 @@ describe('SelectionToolbarComponent', () => {
   let fixture: ComponentFixture<SelectionToolbarComponent>;
   let editorService: EditorService;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [SharedModule],
       declarations: [SelectionToolbarComponent],

@@ -1,5 +1,5 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { MatDialogRef } from '@angular/material';
+import { MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { EditorParams } from '@components/pages/editor/editor/editor-params';
 import { AbstractModalComponent } from 'src/app/components/shared/abstract-modal/abstract-modal.component';

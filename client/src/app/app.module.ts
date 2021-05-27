@@ -29,9 +29,9 @@ import { AppComponent } from './app.component';
     ExportDrawingModule,
     GalleryModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent },
-      { path: 'edit', component: EditorComponent },
-    ]),
+    { path: '', component: HomeComponent },
+    { path: 'edit', component: EditorComponent },
+], { relativeLinkResolution: 'legacy' }),
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],

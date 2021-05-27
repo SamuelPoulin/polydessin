@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { DrawingSurfaceComponent } from '@components/pages/editor/drawing-surface/drawing-surface.component';
 import { GridComponent } from '@components/pages/editor/drawing-surface/grid/grid.component';
@@ -14,7 +14,7 @@ describe('PenTool', () => {
   let fixture: ComponentFixture<EditorComponent>;
   let penTool: PenTool;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [EditorComponent, DrawingSurfaceComponent, GridComponent],
       imports: [SharedModule, RouterTestingModule, ToolbarModule],

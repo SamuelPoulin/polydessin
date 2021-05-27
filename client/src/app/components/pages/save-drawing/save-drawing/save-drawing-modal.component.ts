@@ -1,6 +1,6 @@
 import { Component, SecurityContext } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { MatDialogRef } from '@angular/material';
+import { MatDialogRef } from '@angular/material/dialog';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { AbstractModalComponent } from 'src/app/components/shared/abstract-modal/abstract-modal.component';
 import { TagInputComponent } from 'src/app/components/shared/inputs/tag-input/tag-input.component';

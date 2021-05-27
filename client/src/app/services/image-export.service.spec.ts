@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { DomSanitizer } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
 import { EditorComponent } from '@components/pages/editor/editor/editor.component';
@@ -17,7 +17,7 @@ describe('ImageExportService', () => {
   let domSanitizer: SpyObj<DomSanitizer>;
   let xmlSerializer: XMLSerializer;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     domSanitizer = createSpyObj<DomSanitizer>('domSanitizer', ['bypassSecurityTrustResourceUrl', 'sanitize']);
     TestBed.configureTestingModule({
       declarations: [],

@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { SharedModule } from 'src/app/components/shared/shared.module';
 import { Rectangle } from 'src/app/models/shapes/rectangle';
 
@@ -11,7 +11,7 @@ describe('DrawingSurfaceComponent', () => {
   let fixture: ComponentFixture<DrawingSurfaceComponent>;
   let nativeElementSpyObj: SpyObj<any>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [SharedModule],
       declarations: [DrawingSurfaceComponent],
