@@ -50,7 +50,7 @@
     "express": "^4.17.1",
     "form-data": "^3.0.0",
     "http-status-codes": "^1.4.0",
-    "i": "^0.3.6",
+    "i": "^0.3.7",
     "inversify": "^5.0.1",
     "mongodb-memory-server": "^6.5.0",
     "mongoose": "^5.9.3",
